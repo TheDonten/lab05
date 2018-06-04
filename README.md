@@ -32,7 +32,7 @@ $ source scripts/activate
 ```
 
 ```ShellSession
-$ \curl -sSL https://get.rvm.io | bash -s -- --ignore-dotfiles
+$ \curl -sSL https://get.rvm.io | bash -s -- --ignore-dotfiles - Скачивание Руби 
 $ echo "source $HOME/.rvm/scripts/rvm" >> scripts/activate
 $ rvm autolibs disable
 $ rvm install ruby-2.4.2
@@ -96,15 +96,15 @@ $ git push origin master
 ```
 
 ```ShellSession
-$ travis lint
-$ travis accounts
-$ travis sync
-$ travis repos
-$ travis enable
-$ travis whatsup
-$ travis branches
-$ travis history
-$ travis show
+$ travis lint //-проверить файл travis.yml есть ли он и какие проблемы могли возникнуть//
+$ travis accounts //- просмотреть доступные аккаунты и их репозитории
+$ travis sync //- запускает новую синхронизацию с гитхабом
+$ travis repos //- список репозиториев которые доступны пользователью
+$ travis enable //- активация проекта. //travis-ci/travis.rb: enabled :)//
+$ travis whatsup //- последние используемые репозитории//
+$ travis branches //-отоброжает текущу сборку и ее используемые ветки//
+$ travis history //-отоброжает работы с проектами
+$ travis show //-Отображает общую информацию о текущей сборки://
 ```
 
 ## Report
